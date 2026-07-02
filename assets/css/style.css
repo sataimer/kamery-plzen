@@ -96,3 +96,28 @@
   .camera-gallery-row{grid-template-columns:repeat(3,minmax(0,1fr)) !important;gap:8px !important}
   .camera-gallery-row img{height:120px !important;border-radius:14px !important}
 }
+
+
+/* Větší odsazení podtitulku v logu, aby nebyl nalepený na nadpis */
+.brand-text{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.brand-title{display:inline-block}
+.brand-sub{display:inline-block;margin-left:2px;white-space:nowrap}
+@media(max-width:520px){.brand-text{display:block}.brand-sub{display:block;margin-left:0;margin-top:2px;white-space:normal}}
+
+/* GDPR stránky */
+.gdpr-wrap{max-width:920px;margin:0 auto}
+.gdpr-card{background:rgba(255,255,255,.96);border:1px solid var(--line);border-radius:28px;padding:34px;box-shadow:var(--shadow)}
+.gdpr-card h2{font-size:28px;margin-top:34px}
+.gdpr-card h2:first-child{margin-top:0}
+.gdpr-card h3{font-size:20px;margin:24px 0 8px}
+.gdpr-card p{color:#2a3544}
+.gdpr-card ul{margin:10px 0 18px;padding-left:24px;color:#2a3544}
+.gdpr-card li{margin:8px 0}
+.gdpr-meta{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:24px 0}
+.gdpr-box{background:#f7f9fd;border:1px solid var(--line);border-radius:18px;padding:18px}
+.gdpr-box b{display:block;margin-bottom:6px}
+.gdpr-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:24px}
+.gdpr-link{display:block;text-decoration:none;background:#fff;border:1px solid var(--line);border-radius:22px;padding:22px;box-shadow:0 12px 30px rgba(5,14,28,.06)}
+.gdpr-link:hover{transform:translateY(-2px);box-shadow:0 18px 38px rgba(5,14,28,.10)}
+.gdpr-link span{display:block;color:var(--muted);font-size:14px;margin-top:6px}
+@media(max-width:720px){.gdpr-card{padding:24px}.gdpr-meta,.gdpr-links{grid-template-columns:1fr}}
